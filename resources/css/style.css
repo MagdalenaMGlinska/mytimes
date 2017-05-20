@@ -1,5 +1,6 @@
 body{
   background-color: white;
+  margin: 0;
 }
 
 header {
@@ -12,6 +13,7 @@ header {
   border-bottom: 1px solid black;
   width: 100%;
   position: fixed;
+  background-color: white;
 }
 
 header img {
@@ -40,8 +42,9 @@ a {
 }
 
 .mainsection {
-  display: inline-flex;
-  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
 }
 
 .column.large {
@@ -85,23 +88,29 @@ a {
  color: black;
 }
 
+.article-grid {
+    display: flex;
+}
+
 .orca.story,
 .burger.story {
   width: 300px;
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
 }
 
 .burger.story {
   margin-left: 10px;
 }
-.burger.story.text{
-  margin-left: 10px;
+
+.orca.story h2,
+.burger.story h2{
+  font-family: Georgia;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
 }
-.orca.story.text,
-.burger.story.text {
-  width: 300px;
-  display: inline-flex;
-}
+
 
 .earth.image {
   display: inline-flex;
@@ -183,10 +192,12 @@ footer{
   height: 300px;
   margin-top: 80px;
   flex-direction: column;
+  padding: 10px;
 }
 
 .navfooter{
-  display: inline-block;
+    display: flex;
+    align-items: center;
 }
 
 .textfooter{
